@@ -1,0 +1,36 @@
+# 🛡️ Android Security Checker - Backend Service
+
+This backend service works alongside the **Android Security Checker** to log security events from Android devices. It helps **game companies** detect suspicious activity such as **unsigned APKs, rooted devices, and multiple security flags**.
+
+## 🚀 Features
+✅ Receives security data from the Android app  
+✅ Logs suspicious activity (e.g., unsigned APK, root detection)  
+✅ Sends alerts when a game account is flagged multiple times  
+✅ Can be hosted on any **server (AWS, VPS, Firebase, or local machine)**  
+✅ Supports **Python (Flask), Node.js (Express), or PHP**  
+
+---
+
+## 📡 How It Works
+1. The **Android app** checks if an APK is signed and detects root access.  
+2. If suspicious activity is found, the app **sends data** to this backend service.  
+3. The backend **logs the event** and stores it in a database or file.  
+4. If an account is flagged **3 times**, an **alert is triggered** for manual review.  
+
+---
+
+## ⚙️ Backend Setup
+
+### **1️⃣ Choose a Backend Language**
+Pick a backend that fits your server setup:  
+- 🐍 **Python (Flask)**
+- ⚡ **Node.js (Express)**
+- 🐘 **PHP (Basic API)**
+
+---
+
+### **2️⃣ Running the Backend**
+#### 🐍 **Python (Flask) Setup**
+1. Install Python and Flask:  
+   ```sh
+   pip install flask
